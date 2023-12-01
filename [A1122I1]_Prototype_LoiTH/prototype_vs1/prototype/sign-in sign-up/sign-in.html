@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="sign-in.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .vien{
+            border: 1px solid #87aa74;
+            box-shadow: 0 0 15px rgb(135 170 116);
+            width: 62%;
+        }
+    </style>
+</head>
+<body>
+    <!-- LOGIN FORM CREATION -->
+    <div class="background"></div>
+    <div class="container vien">
+        <div class="item" style="padding-top: 30px; padding-right: 0">
+            <h2 class="logo"><img src="../img/SheepWoolProductsCircleLogoWhile.png" width="250px" height="250px" alt="Logo"></h2>
+            <div class="text-item" style="padding-left: 20px" >
+                <h3>ĐỒ ÁN <br><span>
+                          CÔNG NGHỆ THÔNG TIN
+                      </span></h3>
+                <p>Chào mừng bạn tới với trang web của chúng tôi !</p>
+                <div class="social-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="login-section">
+            <div class="form-box login">
+                <form action="">
+                    <h2>Đăng nhập</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label>Mật khẩu</label>
+                    </div>
+                    <div class="remember-password">
+                        <label ><input type="checkbox">Nhớ mật khẩu</label>
+                        <a href="#">Quên mật khẩu</a>
+                    </div>
+                    <button class="btn">Đăng nhập</button>
+                    <div class="create-account">
+                        <p>Tạo tài khoản mới?    <a href="#" class="register-link">  Đăng kí</a></p>
+                        <p style="margin-bottom: 10px; margin-top: 10px">Đăng nhập với:</p>
+                        <button style="border: none; background-color: white"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" style="width: 30px; border: none"></button>
+                        <button style="border: none; background-color: white"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" style="width: 30px"></button>
+                        <button style="border: none; background-color: white"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" style="width: 30px"></button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="form-box register">
+                <form action="">
+                    <h2>Đăng ký</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" required>
+                        <label>Tên tài khoản</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label>Mật khẩu</label>
+                    </div>
+                    <div class="remember-password">
+                        <label ><input type="checkbox">Tôi đồng ý với điều khoản</label>
+                    </div>
+                    <button class="btn">Đăng ký</button>
+                    <div class="create-account">
+                        <p>Bạn đã có tài khoản ? <a href="#" class="login-link">Đăng nhập</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="sign-in.js"></script>
+</body>
+</html>
