@@ -1,0 +1,44 @@
+Dữ liệu 'degree'
+INSERT INTO `doanit_check`.`degree` (`degree_id`, `name`) VALUES ('1', 'Thạc sĩ');
+INSERT INTO `doanit_check`.`degree` (`degree_id`, `name`) VALUES ('2', 'Tiến sĩ');
+INSERT INTO `doanit_check`.`degree` (`degree_id`, `name`) VALUES ('3', 'Cử nhân');
+
+Dữ liệu faculty
+INSERT INTO `doanit_check`.`faculty` (`faculty_id`, `name`) VALUES ('1', 'CNTT');
+INSERT INTO `doanit_check`.`faculty` (`faculty_id`, `name`) VALUES ('2', 'HKMT');
+INSERT INTO `doanit_check`.`faculty` (`faculty_id`, `name`) VALUES ('3', 'Ngoại Ngữ');
+
+Dữ liệu teacher
+INSERT INTO `doanit_check`.`teacher` (`teacher_id`, `address`, `avatar`, `date_of_birth`, `delete_flag`, `email`, `gender`, `name`, `phone`, `account_id`, `degree_id`, `faculty_id`) VALUES ('1', 'Quảng nam', 'avt1', '2022-11-11', 1, 'GKHJJH@gmail.com', 1, 'Teacher', 0123123, 1, 1, 1);
+
+Dữ liệu student
+INSERT INTO `doanit_check`.`student` 
+VALUES ('1', 'Quảng Ngãi', 'avt001', '2022-11-11', 0, 'GKHJJH@gmail.com', 0, 'Leader', 0123123, 2, 2, 2,1);
+
+Dữ liệu account
+INSERT INTO `doanit_check`.`account` (`account_id`, `password`, `username`) VALUES ('3', '$2a$12$eQPEijgJdoabtK6BVhWI0.1.7IxzFx97qMyM8bbrQCkOCuCmgtnUG', 'admin');
+INSERT INTO `doanit_check`.`account` (`account_id`, `password`, `username`) VALUES ('4', '$2a$12$eQPEijgJdoabtK6BVhWI0.1.7IxzFx97qMyM8bbrQCkOCuCmgtnUG', 'teacher');
+
+Dữ liệu group_account;
+INSERT INTO `doanit_check`.`group_account` (`group_account_id`, `date`, `delete_flag`, `name`, `status`) VALUES (1, '2023-11-11', 1, 'Do an ban hang', 0);
+
+
+
+Dữ liệu grade
+INSERT INTO `doanit_check`.`grade` (`grade_id`, `name`, `faculty_id`) VALUES ('1', 'năm 1', '1');
+INSERT INTO `doanit_check`.`grade` (`grade_id`, `name`, `faculty_id`) VALUES ('2', 'năm 2', '1');
+INSERT INTO `doanit_check`.`grade` (`grade_id`, `name`, `faculty_id`) VALUES ('3', 'năm 4', '2');
+
+Dữ liệu account_role
+INSERT INTO `doanit_check`.`account_role` (`account_role_id`, `account_id`, `role_id`) VALUES ('2', '2', '3');
+INSERT INTO `doanit_check`.`account_role` (`account_role_id`, `account_id`, `role_id`) VALUES ('3', '2', '4');
+INSERT INTO `doanit_check`.`account_role` (`account_role_id`, `account_id`, `role_id`) VALUES ('4', '3', '1');
+INSERT INTO `doanit_check`.`account_role` (`account_role_id`, `account_id`, `role_id`) VALUES ('5', '4', '2');
+
+
+
+
+ALTER TABLE `doanit_check`.`student` 
+CHANGE COLUMN `delete_flag` `delete_flag` TINYINT NULL DEFAULT NULL ,
+CHANGE COLUMN `gender` `gender` TINYINT NULL DEFAULT NULL ,
+CHANGE COLUMN `status_join` `status_join` TINYINT NULL DEFAULT NULL ;
